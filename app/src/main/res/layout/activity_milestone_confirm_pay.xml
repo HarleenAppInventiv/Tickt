@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/il_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_right_icon_toolbar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:text="@string/confirm_n_pay"
+            android:textSize="@dimen/_32ssp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/color_161d4a">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_18sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_18sdp"
+            android:background="@color/color_f6f7f9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/milestone_payment_details"
+                android:textSize="@dimen/_14ssp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:textColor="@color/color_161d4a" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_hours_worked"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hours_worked"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_hours_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hours_worked_rate"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hourly_rate"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_hours_work_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$100"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/milestone_amount"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_milestone_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$100"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/taxes"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_milestone_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10%"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/platform_fees"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_platform_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$100"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/inter_regular"
+                    android:textColor="@color/color_313d48" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_13sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:textColor="@color/color_161d4a" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$100"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:textColor="@color/color_161d4a" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:background="@drawable/ic_bank_round"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_card_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:ellipsize="end"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:maxLines="2"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_15ssp"
+                    tools:text="Dummy Text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:ellipsize="end"
+                    app:fontFamily="@font/inter_regular"
+                    android:maxLines="2"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_15ssp"
+                    tools:text="Dummy Text" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/user_iv_redirection"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/ic_left_icon" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_22sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_btn_yellow"
+            android:text="@string/pay_"
+            android:textSize="@dimen/_14ssp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/color_161d4a"
+            android:layout_height="wrap_content" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

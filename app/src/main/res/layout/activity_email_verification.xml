@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/rl_toolbar"
+            layout="@layout/toolbar_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_toolbar"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="@dimen/_25sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:fontFamily="@font/inter_regular"
+                android:text="@string/email"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phone_number"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_email"
+                    style="@style/EditTextBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:hint="@string/enter_email"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="35" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_error"
+                style="@style/ErrorTextTheme"
+                android:layout_below="@+id/ll_phone" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_subheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phone_error"
+                android:layout_marginLeft="@dimen/_2sdp"
+                app:fontFamily="@font/inter_regular"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/email_associate"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_yellow_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_btn_yellow"
+                android:elevation="@dimen/_3sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/next"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</layout>

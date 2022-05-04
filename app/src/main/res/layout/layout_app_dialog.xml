@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/log_in"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            android:visibility="gone"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/neue_haas_display_roman"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/there_is_something_wrong_with_your_internet_connection_please_click_on_the_refresh_button_below_to_restart_the_application"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/color_D6D6D6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/cancel"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_15ssp" />
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:background="@color/color_D6D6D6" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_refresh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/ok"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

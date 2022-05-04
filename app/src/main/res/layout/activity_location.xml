@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".mvvm.view.builder.postjob.LocationActivity">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/post_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_left" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/loc_tv"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:text="@string/loc"
+                android:textSize="@dimen/_34ssp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:textColor="@color/color_161d4a">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_time_picker"
+                    android:textSize="@dimen/_16ssp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_13sdp"
+                    android:paddingBottom="@dimen/_13sdp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_edittext_0b41a8"
+                    android:textColorHint="@color/color_313d48"
+                    app:fontFamily="@font/inter_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:hint="@string/type_state_city_subrub" />
+
+                <LinearLayout
+                    android:id="@+id/ll_current_time_picker"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_drawable_rect_dfe5ef"
+                    android:gravity="center"
+                    android:layout_height="@dimen/_50sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_gravity="center"
+                        android:drawableStart="@drawable/icon_gps"
+                        app:fontFamily="@font/neue_haas_display_medium"
+                        android:text="@string/use_my_current_location"
+                        android:textSize="@dimen/_14ssp"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:textColor="@color/color_161d4a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_location_continue"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:layout_margin="@dimen/_18sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_btn_yellow"
+            android:text="@string/continue_"
+            android:textSize="@dimen/_14ssp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/color_161d4a"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

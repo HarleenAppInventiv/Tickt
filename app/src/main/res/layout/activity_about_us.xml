@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".mvvm.view.builder.postjob.JobDescActivity">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/job_desc_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_left" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:text="@string/about_you"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_34ssp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:text="@string/about_us_brief"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_18sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_input_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/about_you"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/job_desc_tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0/1000"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@font/neue_haas_display_medium" />
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/job_desc_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:background="@drawable/bg_edittext"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:hint="@string/describe_your_skills_and_experience"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="1000"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_18sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_18sdp"
+                android:textColor="@color/color_161d4a"
+                android:textColorHint="@color/color_99A4B6"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/job_desc_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_18sdp"
+            android:background="@drawable/bg_btn_yellow"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="@string/add"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

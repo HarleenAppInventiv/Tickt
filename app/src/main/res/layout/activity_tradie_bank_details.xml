@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.ticktapp.mvvm.viewmodel.BankDetailsViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/il_header"
+                layout="@layout/layout_right_icon_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/loc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:text="@string/payment_details"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_32ssp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:text="@string/enter_your_bank_account_details"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ActName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                app:fontFamily="@font/inter_regular"
+                android:text="@string/account_name"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_ActName"
+                style="@style/EditTextBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:hint="@string/account_name_"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:nextFocusForward="@+id/edt_ActNo"
+                android:singleLine="true"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_error"
+                style="@style/ErrorTextTheme"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_BsbNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                app:fontFamily="@font/inter_regular"
+                android:text="@string/bsb_number"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_BsbNo"
+                style="@style/EditTextBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:digits="0123456789"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:hint="@string/bsb_number_"
+                android:inputType="number"
+                android:maxLength="7"
+                android:nextFocusForward="@+id/edt_email"
+                android:singleLine="true"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsb_error"
+                style="@style/ErrorTextTheme"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_ActNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                app:fontFamily="@font/inter_regular"
+                android:text="@string/account_number"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_ActNo"
+                style="@style/EditTextBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:digits="qwertyuiopasdfghjklzxcvbnm0123456789"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:hint="@string/account_number_"
+                android:maxLength="10"
+                android:nextFocusForward="@+id/edt_BsbNo"
+                android:singleLine="true"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_accnt_no_error"
+                style="@style/ErrorTextTheme"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:visibility="gone" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_add_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_id_verification"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_22sdp"
+            android:background="@drawable/bg_btn_pale"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="@string/add_id_verification"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_id_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_bnk_accnt"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:fontFamily="@font/neue_haas_display_roman"
+            android:text="@string/id_verification_is_required"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_bnk_accnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_22sdp"
+            android:background="@drawable/bg_btn_yellow"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="@string/save_changes"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_back">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    app:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:id="@+id/tv_total_revenue"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/total_earnings"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:gravity="center"
+                    android:id="@+id/tv_total_revenue_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_32ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_revenue"
+                    tools:text="264899" />
+
+                <TextView
+                    app:fontFamily="@font/neue_haas_display_roman"
+                    android:gravity="center"
+                    android:id="@+id/tv_total_jobs"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_28sdp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/total_jobs"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_18ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:gravity="center"
+                    android:id="@+id/tv_total_jobs_value"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_28sdp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_32ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_revenue"
+                    tools:text="48" />
+
+                <TextView
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:gravity="center"
+                    android:id="@+id/tv_past_jobs"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/past_jobs"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_jobs_value" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_search"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_search_builder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_jobs_value" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:clipToPadding="false"
+                    android:id="@+id/rv_past_jobs"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_50sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_past_jobs" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".50" />
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

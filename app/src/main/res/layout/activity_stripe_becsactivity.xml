@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvvm.view.builder.milestone.StripeBECSActivity">
+
+    <include
+        android:id="@+id/il_header"
+        layout="@layout/layout_right_icon_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- app:companyName is a required attribute -->
+    <com.stripe.android.view.BecsDebitWidget
+        android:id="@+id/becs_debit_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:companyName="@string/app_name" />
+
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:enabled="false"
+        android:text="Mandate &amp; Pay" />
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/job_data_cv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_195sdp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:elevation="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/ll_header"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    app:riv_oval="true"
+                    android:background="@drawable/bg_blue_circle"
+                    android:layout_width="@dimen/_45sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/active_circle"
+                    android:layout_height="@dimen/_45sdp"
+                    android:id="@+id/iv_user_profile" />
+
+                <LinearLayout
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/neue_haas_display_medium"
+                        tools:text="Dummy Text"
+                        android:id="@+id/tv_title"
+                        android:textSize="@dimen/_17ssp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:textColor="@color/color_161d4a" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/inter_regular"
+                        tools:text="Dummy Text"
+                        android:id="@+id/tv_details"
+                        android:textSize="@dimen/_14ssp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:textColor="@color/color_313d48" />
+
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_go"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/next" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_details"
+                android:paddingStart="@dimen/_3sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:layout_below="@+id/ll_header"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/bg_light_rect">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/inter_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_14ssp"
+                        android:maxLines="1"
+                        tools:text="32 min ago"
+                        android:drawableStart="@drawable/ic_quick"
+                        android:id="@+id/tv_time"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:textColor="@color/color_313d48" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/inter_regular"
+                        android:padding="@dimen/_5sdp"
+                        tools:text="32 min ago"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableStart="@drawable/ic_dollor_new"
+                        android:textSize="@dimen/_14ssp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_money"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:textColor="@color/color_313d48" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_place"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_nearby"
+                        android:drawablePadding="@dimen/_3sdp"
+                        android:ellipsize="end"
+                        app:fontFamily="@font/inter_regular"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/color_313d48"
+                        android:textSize="@dimen/_14ssp"
+                        tools:text="32 min ago" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/inter_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_14ssp"
+                        android:drawableStart="@drawable/ic_calendar"
+                        android:id="@+id/tv_days"
+                        android:maxLines="1"
+                        tools:text="32 min ago"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/_24sdp"
+                        android:textColor="@color/color_313d48" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

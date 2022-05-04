@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".mvvm.view.builder.postjob.TemplateMilestoneActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_14ssp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/temp_mile_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_left" />
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:text="@string/job_milestones"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_34ssp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/job_temp_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:src="@drawable/ic_milestones_graphic">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    app:fontFamily="@font/neue_haas_display_roman"
+                    android:text="@string/job_temp_brief1"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_14ssp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_milestone_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/job_add_milestone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@drawable/bg_round_corner_dfe5ef"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="@string/add_mile"
+            android:textAllCaps="false"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_milestone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@drawable/bg_round_corner_dfe5ef"
+            android:backgroundTint="@color/color_fee600"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

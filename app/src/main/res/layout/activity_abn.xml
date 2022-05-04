@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.ticktapp.mvvm.viewmodel.ABNViewModel" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/rl_toolbar"
+                layout="@layout/toolbar_onboarding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="@dimen/_25sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:fontFamily="@font/inter_regular"
+                        android:text="@string/company_name"
+                        android:textColor="@color/color_313d48"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_name"
+                        style="@style/EditTextBackground"
+                        android:layout_width="match_parent"
+                        android:inputType="textCapWords"
+
+                        android:layout_height="wrap_content"
+                        android:digits="qwertyuioplkjhgfdsazxcvbnm"
+                        android:hint="@string/company_name_hint"
+
+                        android:maxLength="40"
+                        android:text="@={model.mCompanyEditText}" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_name_error"
+                        style="@style/ErrorTextTheme" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_pos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:fontFamily="@font/inter_regular"
+                        android:text="@string/your_position"
+                        android:textColor="@color/color_313d48"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_pos"
+                        style="@style/EditTextBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="qwertyuioplkjhgfdsazxcvbnm"
+                        android:hint="@string/position_hint"
+                        android:maxLength="40"
+                        android:text="@={model.mPositionEditText}" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_pos_error"
+                        style="@style/ErrorTextTheme" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_abn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/inter_regular"
+                    android:layout_below="@+id/ll_company"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/australian_business_number"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_abn"
+                    style="@style/EditTextBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/_14_605_375_373"
+                    android:layout_below="@+id/tv_abn"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:digits="1234567890"
+                    android:imeOptions="actionDone"
+                    android:text="@={model.mABNEditText}" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_abn_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/edt_abn" />
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_yellow_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_btn_yellow"
+                    android:elevation="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/next"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.ticktapp.mvvm.viewmodel.PhoneNumberViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            layout="@layout/toolbar_onboarding"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/rl_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_toolbar"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="@dimen/_25sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:fontFamily="@font/inter_regular"
+                android:text="@string/phone_number"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phone_number"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/edt_country_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/bg_edittext"
+                    android:clickable="false"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:maxLength="3"
+                    android:padding="@dimen/_13sdp"
+                    android:text="+61"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_phone_num"
+                    style="@style/EditTextBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:digits="1234567890"
+                    android:hint="402 296 237"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:text="@={model.mPhoneEditText}" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_error"
+                style="@style/ErrorTextTheme"
+                android:layout_below="@+id/ll_phone" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_subheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phone_error"
+                app:fontFamily="@font/inter_regular"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/enter_the_phone_number_associated_with_your_account_and_we_will_send_a_code_to_reset_your_password"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_yellow_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_btn_yellow"
+                android:elevation="@dimen/_3sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:gravity="center"
+                android:onClick="@{() -> model.checkMobileNumber()}"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/next"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</layout>

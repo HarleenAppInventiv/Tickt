@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f6f7f9"
+        android:id="@+id/ll_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/temp_mile_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_left"
+            app:backOnClick="@{ `back` }" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_milestone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18ssp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:text="@string/new_jobs_"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_32ssp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/sr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".mvvm.view.builder.postjob.TemplateMilestoneActivity">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_result_title_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:ellipsize="end"
+                    app:fontFamily="@font/neue_haas_display_roman"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/no_jobs_found_"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_18ssp"
+                    android:visibility="gone" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_new_jobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_20sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/rowitem_recommended_jobs" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

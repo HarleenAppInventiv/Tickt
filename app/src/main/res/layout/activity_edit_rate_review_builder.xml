@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/rate_review_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_left" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:text="@string/cancel"
+                    android:textColor="@color/color_123f95"
+                    android:textSize="@dimen/_15ssp" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:text="@string/edit_the_review"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_34ssp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <com.willy.ratingbar.ScaleRatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:srb_drawableEmpty="@drawable/ic_star_reviw"
+                app:srb_drawableFilled="@drawable/ic_star_reviw_fill"
+                app:srb_numStars="5"
+                app:srb_rating="0"
+                app:srb_starHeight="@dimen/_28sdp"
+                app:srb_starPadding="@dimen/_8sdp"
+                app:srb_starWidth="@dimen/_28sdp"
+                app:srb_stepSize="0.5" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_18sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:text="@string/your_review"
+                    android:textColor="@color/color_748092"
+                    android:textSize="@dimen/_15ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/job_desc_tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:text="0/500"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/post_ed_review"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:background="@drawable/bg_edittext_more"
+                app:fontFamily="@font/neue_haas_display_roman"
+                android:hint="@string/your_review_"
+                android:gravity="top"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="500"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_18sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_18sdp"
+                android:textColor="@color/color_161d4a"
+                android:textColorHint="@color/color_99A4B6"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_leave_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@drawable/bg_btn_yellow"
+            android:elevation="@dimen/_3sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/save"
+            android:textColor="@color/color_313d48"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/tool_crop_image"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/neue_haas_display_bold"
+        android:id="@+id/tv_preview"
+        android:layout_centerHorizontal="true"
+        android:text="Preview Image"
+        android:padding="20dp"
+        android:textColor="#313d48"
+        android:textSize="20dp" />
+
+
+    <android.com.imagecropper.cicularcropper.CropImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_preview"
+        app:cropScaleType="fitCenter"
+        android:layout_above="@+id/done_cancel_bar"/>
+
+    <include
+        android:id="@+id/done_cancel_bar"
+        layout="@layout/crop__layout_done_cancel"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

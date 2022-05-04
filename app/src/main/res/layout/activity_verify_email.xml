@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.ticktapp.mvvm.viewmodel.VerifyNumberViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/rl_toolbar"
+            layout="@layout/toolbar_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_25sdp"
+            android:clipToPadding="false">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/inter_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/verification_code"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_verification_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/inter_regular"
+                android:layout_below="@id/tv_otp_error"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:text="@string/verification_email_code"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_code"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtpOne"
+                    style="@style/OtpEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    tools:ignore="Autofill" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtpTwo"
+                    style="@style/OtpEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    tools:ignore="Autofill" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtpThree"
+                    style="@style/OtpEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    tools:ignore="Autofill" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtpFour"
+                    style="@style/OtpEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    tools:ignore="Autofill" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtpFive"
+                    style="@style/OtpEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_otp_error"
+                style="@style/ErrorTextTheme"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_below="@+id/ll_code" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title_do_not_receive_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/inter_regular"
+                android:layout_above="@+id/tv_resend_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/do_not_you_receive_any_codes"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_resend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:layout_above="@+id/tv_yellow_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:enabled="false"
+                android:textColor="@color/color_0b41a8"
+                android:textSize="@dimen/_14ssp"
+                tools:text="00:00" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_yellow_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_btn_yellow"
+                android:elevation="@dimen/_3sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/next"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

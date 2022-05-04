@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_trade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cb_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/ic_checkbox_un_active" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:layout_toRightOf="@+id/cb_qualification"
+                android:id="@+id/tv_trade"
+                android:padding="@dimen/_3sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/color_313d48" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/bg_round_corner_dfe5ef"
+                    android:drawablePadding="@dimen/_5sdp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:minWidth="@dimen/_80sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/color_123f95"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/iv_cancel"
+                    android:layout_gravity="end"
+                    android:src="@drawable/icon_close_1" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

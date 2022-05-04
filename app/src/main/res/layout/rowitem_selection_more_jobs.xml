@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_blue_rect_new"
+        android:gravity="center"
+        android:padding="@dimen/_13sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/electrician"
+            android:id="@+id/imgJobType"
+
+            app:tint="@color/color_123f95" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:minWidth="@dimen/_70sdp"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_13sdp"
+            tools:text="Nearby" />
+    </LinearLayout>
+
+</layout>

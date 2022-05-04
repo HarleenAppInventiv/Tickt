@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".mvvm.view.builder.postjob.PostNewJobActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".mvvm.view.builder.postjob.PostNewJobActivity">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/post_iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_left">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:text="@string/post_new_job"
+                    android:id="@+id/tv_title"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_34ssp">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/jobname"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/post_ed_job_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:background="@drawable/bg_edittext"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:hint="@string/jobname_"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:maxLength="100"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_18sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_18sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_161d4a"
+                    android:textColorHint="@color/color_99A4B6"
+                    android:textSize="@dimen/_16ssp">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rv_h1_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/category"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_17ssp"
+                    android:visibility="gone">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rv_h2_job_types"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/job_type"
+                    android:text="@string/jobtype"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_17ssp"
+                    android:visibility="gone">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_job_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_rv_h3_specailatisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/specialisation"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_17ssp"
+                    android:visibility="gone">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_specialization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_post_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_18sdp"
+            android:background="@drawable/bg_btn_yellow"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="@string/continue_"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

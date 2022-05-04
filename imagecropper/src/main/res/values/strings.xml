@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ImageCropper</string>
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="image_action">Complete action using</string>
+    <string name="crop_image_activity_title">Crop Image</string>
+    <string name="pickimage">Pick Image</string>
+    <string name="chooseFromGallery">Choose from gallery</string>
+    <string name="takePicture">Take picture</string>
+    <string name="uploadPicture">Upload picture</string>
+    <string name="set_preview_image">Set Preview Image</string>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/portfolio_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_left" />
+
+            <!-- <androidx.appcompat.widget.AppCompatTextView
+                 android:id="@+id/tv_title"
+                 android:visibility="gone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginStart="@dimen/_2sdp"
+                 android:layout_toEndOf="@+id/portfolio_iv_back"
+                 app:fontFamily="@font/neue_haas_display_medium"
+                 android:gravity="center"
+                 android:textColor="@color/color_161d4a"
+                 android:textSize="@dimen/_16ssp"
+                 tools:text="Wire up circuit box" />-->
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/portfolio_iv_back"
+                android:layout_alignBottom="@+id/portfolio_iv_back"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/ic_settings_helper"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_images"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp" />
+
+            <com.bikomobile.circleindicatorpager.CircleIndicatorPager
+                android:id="@+id/circleIndicatorPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/bg_dark_circle_indicator"
+                android:minWidth="@dimen/_50sdp"
+                android:paddingStart="@dimen/_1sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingEnd="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                app:ci_drawable="@drawable/round_border_yellow"
+                app:ci_drawable_unselected="@drawable/white_radius"
+                app:ci_height="8dp"
+                app:ci_margin="5dp"
+                app:ci_width="8dp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_desc_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:ellipsize="end"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:maxLines="2"
+            android:text="@string/job_description"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_17ssp"
+            android:visibility="gone" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:ellipsize="end"
+            app:fontFamily="@font/neue_haas_display_roman"
+            android:maxLines="2"
+            android:text="Wire up circuit box"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_17ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:fontFamily="@font/inter_regular"
+            android:text="@string/details"
+            android:textColor="@color/color_313d48"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+</layout>

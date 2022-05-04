@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tv_highest_rated"
+        android:title="Highest rated" />
+    <item
+        android:id="@+id/tv_closed_me"
+        android:title="Closest to me" />
+    <item
+        android:id="@+id/tv_most_job_completed"
+        android:title="Most jobs completed" />
+</menu>

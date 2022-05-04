@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="model"
+            type="com.app.core.model.jobmodel.TradieInitalProfileModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".mvvm.view.builder.postjob.JobDescActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/job_desc_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_left" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:text="@string/change_email"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_34ssp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            app:fontFamily="@font/inter_regular"
+            android:text="@string/change_email_desc_text"
+            android:textColor="@color/color_313d48"
+            android:textSize="@dimen/_14ssp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name_error"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:fontFamily="@font/inter_regular"
+                android:text="@string/new_email"
+                android:textColor="@color/color_313d48"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_email"
+                    style="@style/EditTextBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/new_email_"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:nextFocusForward="@+id/edt_abn"
+                    android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_email_error"
+                style="@style/ErrorTextTheme"
+                android:layout_below="@+id/edt_email" />
+
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/neue_haas_display_roman"
+                    android:id="@+id/tv_password"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/current_pass"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_password_viewgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_password"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/bg_round_dfe5ef">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_pass"
+                        style="@style/EditTextPasswordBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/current_pass_"
+                        android:layout_marginTop="0dp"
+                        android:background="@null"
+                        android:layout_toStartOf="@id/ic_eye"
+                        android:inputType="textPassword"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:singleLine="true"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:padding="@dimen/_8sdp"
+                        changePasswordToggle="@{0}"
+                        app:srcCompat="@drawable/ic_icon_eye_closed_dark" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_password_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/rl_password_viewgroup" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/bg_btn_yellow"
+                        app:fontFamily="@font/neue_haas_display_medium"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_22sdp"
+                        android:paddingTop="@dimen/_16sdp"
+                        android:paddingEnd="@dimen/_22sdp"
+                        android:paddingBottom="@dimen/_16sdp"
+                        android:text="@string/save_changes"
+                        android:textColor="@color/color_161d4a"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

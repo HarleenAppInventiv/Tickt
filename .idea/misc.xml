@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/bg_blue_circle.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/bg_blue_circle_dark.xml" value="1.2" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/bg_blue_rect_new.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/bg_btn_yellow.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/bg_circle_grey.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/bg_selected_rect_new.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/ic_cancel_filled.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/ic_edit_milestone.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/drawable/ic_nearby.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_add_milestone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_add_portfolio.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_add_quote.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_builder_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_builder_public_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_check_approve_milestone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_done.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_edit_milestone_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_filter.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_job_apply.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_job_cancel_by_tradie.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_job_cancelled_by_builder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_job_desc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_job_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_login.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_milestone_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_milestone_list_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_milestone_template_list.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_my_builder_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_pay.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_portfolio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_post_job_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_post_new_job.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_question_list.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_quote_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_save_template.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_search_job.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_search_tradie.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_stripe_becsactivity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_template_milestone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_tradie_bank_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_tradie_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_tradie_public_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_tradiee_job_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_upload_video_photo.xml" value="0.264" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_view_quote.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/bottom_sheet_video.xml" value="0.264" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/dialog_popup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/fragment_builder_active_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/fragment_builder_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/fragment_home_builder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/fragment_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/fragment_tradie_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/layout_pop_up_bank_details_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/layout_pop_up_milestone_option.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/row_milestone_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/row_portfolio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_active_jobs.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_builder_active_jobs.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_builder_past_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_past_jobs.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_recommended_jobs.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_recommended_tradie.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_selection_more_jobs.xml" value="0.536" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_specialization.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/rowitem_trades.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt App/app/src/main/res/layout/search_toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/drawable/bg_blue_chat_circle.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/drawable/bg_blue_circle.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/drawable/bg_dark_circle_indicator.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/drawable/bg_selected_rect_trade_new.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/drawable/ic_mastercard.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/drawable/ic_save_job.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/drawable/ic_unsaved_job.xml" value="0.2703125" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_abn.xml" value="0.264" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_about_us.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_add_builder_review_completed.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_add_card.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_add_document.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_add_milestone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_add_portfolio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_add_quote.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_add_vouch.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_approved_milestones.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_ask_question.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_ask_question_reply.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_bank_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_builder_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_builder_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_builder_public_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_builder_setting.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_check_approve_milestone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_create_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_dates.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_decline_milestone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_done.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_edit_basic_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_edit_builder_basic_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_edit_milestone_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_edit_rate_review_builder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_file_open.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_filter.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_give_rate_review.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_home_builder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_job_apply.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_job_cancel_by_tradie.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_job_desc.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_job_details.xml" value="0.264" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_milestone_confirm_pay.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_milestone_confirm_select_pay.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_milestone_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_milestone_hours.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_milestone_list.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_my_builder_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_new_jobs.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_notification_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_notifications_tradie.xml" value="0.264" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_onboarding.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_pay.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_payment_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_phone_number.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_portfolio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_post_job_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_post_new_job.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_question_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_quote_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_quote_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_rate_builder_activty_star.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_rate_builder_comment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_search_category.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_search_job.xml" value="0.2457200402819738" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_search_suggestion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_search_tradie.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_settings.xml" value="0.264" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_signup_process.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_success.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_template_milestone.xml" value="0.264" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_trade.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_bank_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_my_revenue.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_public_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_question_list.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradie_saved_job.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradiee_job_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_tradiee_milestone_list.xml" value="0.24722222222222223" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_upload_milestone_photos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_verify_number.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_view_quote.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/bottom_sheet_gallery_camera.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/dialog_cancel_rejection_reason.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/dialog_month_picker.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/dialog_popup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/dialog_select_job.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_active_jobs.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_builder_active_jobs.xml" value="0.24722222222222223" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_builder_profile.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_chat_builder.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_home_builder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_jobs.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_tradie_message.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/fragment_tradie_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/home_builder_toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/home_toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/layout_pop_up_bank_details_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/layout_pop_up_milestone_option.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/layout_right_icon_toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/layout_slider.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_card_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_chat_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_complete_milestone.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_milestone_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_milestone_list_selection_builder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_past_jobs.xml" value="0.4" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_portfolio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_question_answers_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_question_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_reviews.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_reviews_builder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_search_circle_suggestion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_search_suggestion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_support_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_tradie_answers_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_tradie_question_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/row_vounches.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_active_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_builder_active_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_builder_past_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_mix_small_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_mix_small_specialization.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_notifications.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_past_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_quote_tradie_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_recommended_jobs.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_recommended_tradie.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_recommneded_tradie_vertical.xml" value="0.24722222222222223" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_specialization.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/rowitem_trades.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/Tickt-App-Project/app/src/main/res/layout/search_toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Appinventiv/AndroidStudioProjects/android/app/src/main/res/layout/activity_notifications_tradie.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-uat_m6_m7_bugs/app/src/main/res/layout/activity_stripe_becsactivity.xml" value="0.13020833333333334" />
+        <entry key="app/src/main/res/drawable/bg_drawable_rect_dfe5ef.xml" value="0.20104166666666667" />
+        <entry key="app/src/main/res/drawable/ic_doc_svg.xml" value="0.20104166666666667" />
+        <entry key="app/src/main/res/drawable/ic_dropbox.xml" value="0.20104166666666667" />
+        <entry key="app/src/main/res/drawable/ic_pdf_svg.xml" value="0.20104166666666667" />
+        <entry key="app/src/main/res/layout/activity_abn.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_about_us.xml" value="0.25434439178515006" />
+        <entry key="app/src/main/res/layout/activity_add_builder_review_completed.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_add_card.xml" value="0.25434439178515006" />
+        <entry key="app/src/main/res/layout/activity_add_document.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_add_milestone.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_add_portfolio.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_add_quote.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_add_vouch.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_alltrades.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_approved_milestones.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_ask_question.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_ask_question_reply.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_bank_details.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_builder_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_builder_my_revenue.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_builder_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_builder_public_profile.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_builder_setting.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_change_password.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_check_approve_milestone.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_choose_list.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_create_password.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_dates.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_decline_milestone.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_done.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_edit_basic_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_edit_builder_basic_profile.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_edit_milestone_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_edit_rate_review_builder.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_email_change.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_email_verification.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_file_open.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_filter.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_give_rate_review.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_home_builder.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_job_apply.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_job_cancel_by_tradie.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_job_cancelled_by_builder.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_job_cancelled_quote.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_job_desc.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_job_details.xml" value="0.12962962962962962" />
+        <entry key="app/src/main/res/layout/activity_location.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_lodge_dispute_tradie.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_lounge_dispute_builder.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_milestone_confirm_pay.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_milestone_confirm_select_pay.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_milestone_details.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_milestone_hours.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_milestone_list.xml" value="0.12962962962962962" />
+        <entry key="app/src/main/res/layout/activity_milestone_list_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_milestone_template_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_milestone_transcation.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_my_builder_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_need_approval.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_new_applicant.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_new_applicant_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_new_jobs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_new_password_created.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_notification_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_notifications_tradie.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_only_search_category.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pay.xml" value="0.1296875" />
+        <entry key="app/src/main/res/layout/activity_payment_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_phone_number.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_portfolio.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_post_job_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_post_new_job.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_question_list.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_quote_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_quote_list.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_rate_builder_activty_star.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_rate_builder_comment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_reply_review.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_save_template.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search_category.xml" value="0.11666666666666667" />
+        <entry key="app/src/main/res/layout/activity_search_dates.xml" value="0.25434439178515006" />
+        <entry key="app/src/main/res/layout/activity_search_job.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search_location.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_search_payment_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search_suggestion.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search_tradie.xml" value="0.11666666666666667" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_signup_process.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_specialization.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_success.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_template_milestone.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_trade.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tradie_bank_details.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_tradie_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tradie_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tradie_my_revenue.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_tradie_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tradie_public_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tradie_question_list.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_tradie_saved_job.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_tradiee_job_details.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_tradiee_milestone_list.xml" value="0.25434439178515006" />
+        <entry key="app/src/main/res/layout/activity_upload_milestone_photos.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_upload_video_photo.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/activity_verification_process.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_verify_email.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_verify_number.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_view_quote.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_webview.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/adapter_dropbox_item.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/bottom_dropbox_dialog.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/bottom_sheet_camera.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/bottom_sheet_file.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/bottom_sheet_gallery_camera.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/bottom_sheet_video.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/custom_toast_text.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/demo_file.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/dialog_cancel_rejection_reason.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_email.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/dialog_expiration_date.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_hours_picker.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_image_post_view.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/dialog_month_picker.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_popup.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_select_job.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dummy.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_active_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_builder_active_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_builder_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_chat_builder.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11650804069576633" />
+        <entry key="app/src/main/res/layout/fragment_home_builder.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_job_data.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_onboarding.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_past_job.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_portfolio.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_tradie_message.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/fragment_tradie_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/home_builder_toolbar.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/home_toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/job_cat_horizon.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/layout_app_dialog.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/layout_chat_list_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_pop_up_bank_details_edit.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/layout_pop_up_milestone_option.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/layout_right_icon_toolbar.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/layout_white_toolbar.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/options_bottom_sheet.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/row_cancel_reason.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/row_card_view.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/row_chat_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_choose_job_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_complete_milestone.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_milestone_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_milestone_list_selection_builder.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_milestone_list_transacation_builder.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_milestone_template.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_milestones.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/row_past_jobs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_photos_video.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/row_question_answers_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_question_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_reviews.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_reviews_builder.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_search_circle_suggestion.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_search_suggestion.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_support_chat.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/row_tradie_answers_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_tradie_question_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_vounches.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_active_jobs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_builder_active_jobs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_builder_past_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_documents.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_mix_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_mix_small_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_mix_small_specialization.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_mix_specialization.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_notifications.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_past_jobs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_quote_item_tradie_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_quote_tradie_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_recommended_jobs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_recommended_tradie.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_recommneded_tradie_mix.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_recommneded_tradie_vertical.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_selection_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_selection_more_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_small_jobs.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_small_specialization.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/layout/rowitem_specialization.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_trades.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rowitem_uploaded_docs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/search_toolbar.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/toolbar_onboarding.xml" value="0.18489583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

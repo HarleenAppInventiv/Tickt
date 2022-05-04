@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".mvvm.view.builder.postjob.PayActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/pay_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_left" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:text="@string/job_type"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_34ssp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:id="@+id/ll_budget"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/radio_check" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:text="@string/i_have_budget"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_19ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/bugdet_desc"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_time_picker"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_drawable_rect_dfe5ef"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_selected_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:fontFamily="@font/neue_haas_display_medium"
+                            android:text="@string/per_hour"
+                            android:textColor="@color/color_161d4a"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_drop_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:src="@drawable/dropdown" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:animateLayoutChanges="true"
+                            android:background="@drawable/bg_edittext"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingTop="@dimen/_13sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingBottom="@dimen/_13sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/edt_amount_sign"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:fontFamily="@font/neue_haas_display_medium"
+                                android:text="$"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/color_a8b4bc"
+                                android:textSize="@dimen/_16ssp"
+                                android:visibility="gone" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:cursorVisible="true"
+                                app:fontFamily="@font/neue_haas_display_medium"
+                                android:hint="$0"
+                                android:imeOptions="actionGo"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/color_a8b4bc"
+                                android:textCursorDrawable="@drawable/bg_blue_cursor"
+                                android:textSize="@dimen/_16ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_quote"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:alpha="0.5"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/radio_drawable" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:text="@string/i_need_a_quote"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_19ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/quote_desc"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/job_desc_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_18sdp"
+            android:background="@drawable/bg_btn_yellow"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:text="@string/continue_"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

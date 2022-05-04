@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/timing_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_left" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loc_tv"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:text="@string/timing"
+            android:textSize="@dimen/_34ssp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/color_161d4a">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:textSize="@dimen/_14ssp"
+            android:layout_width="wrap_content"
+            app:fontFamily="@font/inter_regular"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_star_finish_date"
+            android:textColor="@color/color_313d48" />
+
+
+        <com.savvi.rangedatepicker.CalendarPickerView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:tsquare_dividerColor="@color/transparent"
+            app:tsquare_headerTextColor="@color/color_161d4a"
+            app:tsquare_titleTextColor="@color/color_161d4a"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_post_submit"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:layout_margin="@dimen/_18sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_btn_yellow"
+            android:text="@string/continue_"
+            android:textSize="@dimen/_14ssp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/color_161d4a"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

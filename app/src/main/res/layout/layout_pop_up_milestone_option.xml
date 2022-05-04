@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_menu_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_option_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp"
+            tools:text="@string/edit_milestone"
+            android:drawablePadding="@dimen/_12sdp"
+            android:drawableStart="@drawable/ic_square_edit_outline"/>
+
+
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_14ssp"
+            tools:text="@string/lounge_dispute"
+            android:drawablePadding="@dimen/_12sdp"
+            android:drawableStart="@drawable/ic_lounge"/>
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="#ED1C24"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textSize="@dimen/_14ssp"
+            tools:text="@string/cancel_job"
+            android:drawablePadding="@dimen/_12sdp"
+            android:drawableStart="@drawable/ic_cancel_filled"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

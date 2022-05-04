@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/crop__button_bar"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_yellow"
+        android:elevation="3dp"
+        android:fontFamily="@font/neue_haas_display_bold"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Done"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_yellow"
+        android:elevation="3dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/neue_haas_display_bold"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Cancel"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_4f5f8">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/sr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_105sdp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tickt_home_screen"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_title_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_100sdp"
+                            app:fontFamily="@font/neue_haas_display_medium"
+                            android:gravity="center"
+                            android:text="@string/your_local_network"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_34ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_subheading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title_home"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            app:fontFamily="@font/neue_haas_display_roman"
+                            android:gravity="center"
+                            android:text="@string/connect_with_tradepeople"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16ssp" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_near_by"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_subheading"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_32sdp"
+                            android:background="@drawable/bg_btn_yellow"
+                            app:fontFamily="@font/neue_haas_display_medium"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingTop="@dimen/_14sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingBottom="@dimen/_14sdp"
+                            android:text="@string/search_now"
+                            android:textColor="@color/color_161d4a"
+                            android:textSize="@dimen/_16ssp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_rv_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_background"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <LinearLayout
+                            android:id="@+id/tv_rv_h1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:fontFamily="@font/neue_haas_display_medium"
+                                android:text="@string/categories"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_17ssp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_all_category"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:fontFamily="@font/neue_haas_display_medium"
+                                android:text="@string/all"
+                                android:textColor="@color/color_123f95"
+                                android:textSize="@dimen/_14ssp" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_categories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_rv_h1"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/rowitem_trades" />
+
+
+                        <LinearLayout
+                            android:id="@+id/tv_rv_h2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rv_categories"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:fontFamily="@font/neue_haas_display_medium"
+                                android:text="@string/saved_tradie"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_17ssp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_all_save_tradie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:fontFamily="@font/neue_haas_display_medium"
+                                android:text="@string/all"
+                                android:textColor="@color/color_123f95"
+                                android:textSize="@dimen/_14ssp" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_save_tradie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_rv_h2"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/rowitem_recommended_jobs" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_rv_h3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rv_save_tradie"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="22dp"
+                            app:fontFamily="@font/neue_haas_display_medium"
+                            android:padding="@dimen/_4sdp"
+                            android:text="@string/recommended_tradepeople"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_17ssp"
+                            android:visibility="gone" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_trade_people"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_rv_h3"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/rowitem_recommended_jobs" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/rl_toolbar"
+            layout="@layout/home_builder_toolbar" />
+
+    </RelativeLayout>
+</layout>

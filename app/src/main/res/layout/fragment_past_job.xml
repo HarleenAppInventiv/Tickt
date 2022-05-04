@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_4f5f8">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/neue_haas_display_roman"
+            android:text="@string/completed_job_not_found"
+            android:id="@+id/tv_result_title_no_data"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_18ssp"
+            android:maxLines="2"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:ellipsize="end"
+            android:textColor="@color/color_161d4a" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_active_jobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/rowitem_recommended_jobs" />
+
+    </RelativeLayout>
+</layout>

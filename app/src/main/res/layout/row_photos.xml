@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:id="@+id/row_ll_photos"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_photos"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_drawable_rect_dfe5ef"
+            app:riv_corner_radius="@dimen/_5sdp"
+            app:riv_oval="false" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/row_photos_iv_other"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_pdf_svg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/row_photos_iv_play"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play_svg"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</layout>

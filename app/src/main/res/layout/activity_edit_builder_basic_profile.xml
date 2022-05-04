@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.app.core.model.profile.InitalProfileModel" />
+    </data>
+
+home/
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".mvvm.view.builder.postjob.JobDescActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/job_desc_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_left" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:text="@string/edit_profile"
+            android:textColor="@color/color_161d4a"
+            android:textSize="@dimen/_34ssp" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/full_name"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_name"
+                    style="@style/EditTextBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/full_name_hint"
+                    android:inputType="textCapSentences"
+                    android:maxLength="40"
+                    android:nextFocusForward="@+id/edt_email"
+                    android:singleLine="true"
+                    android:text="@{model.fullName}"
+                    android:textColor="@color/color_161d4a"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/edt_name" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/mobile_number"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_phone_number"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/edt_country_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1.5"
+                        android:alpha="0.4"
+                        android:background="@drawable/bg_edittext"
+                        android:clickable="false"
+                        app:fontFamily="@font/neue_haas_display_medium"
+                        android:maxLength="3"
+                        android:padding="@dimen/_13sdp"
+                        android:text="+61"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_phone_num"
+                        style="@style/EditTextBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:alpha="0.4"
+                        android:clickable="false"
+                        android:digits="1234567890"
+                        android:enabled="false"
+                        android:hint="402 296 237"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:nextFocusForward="@+id/edt_email"
+                        android:text="@{model.mobileNumber}" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_phone_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/ll_phone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_error"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/email"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_email"
+                        style="@style/EditTextBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:hint="@string/email_hint"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="40"
+                        android:nextFocusForward="@+id/edt_abn"
+                        android:singleLine="true"
+                        android:text="@{model.email}" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:fontFamily="@font/neue_haas_display_medium"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/change"
+                        android:textColor="@color/color_123f95"
+                        android:textSize="@dimen/_14ssp" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_email_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/edt_email" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_change_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    android:text="@string/change_password"
+                    android:textColor="@color/color_123f95"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_company"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/company_name"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_company_name"
+                    style="@style/EditTextBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_abn"
+
+                    android:hint="@string/company_name_hint"
+                    android:inputType="textPersonName|textCapWords"
+                    android:text="@{model.companyName}" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_company_name_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/edt_abn" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_company"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/your_position"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_position"
+                    style="@style/EditTextBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_abn"
+                    android:hint="@string/your_position_"
+                    android:inputType="text"
+                    android:text="@{model.position}" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_position_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/edt_abn" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_abn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_company"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    app:fontFamily="@font/inter_regular"
+                    android:text="@string/_14_605_375_373"
+                    android:textColor="@color/color_313d48"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_abn"
+                    style="@style/EditTextBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_abn"
+                    android:digits="1234567890"
+                    android:hint="@string/australian_business_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:text="@{model.abn}" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_abn_error"
+                    style="@style/ErrorTextTheme"
+                    android:layout_below="@+id/edt_abn" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/_22sdp"
+                        android:background="@drawable/bg_btn_yellow"
+                        app:fontFamily="@font/neue_haas_display_medium"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_22sdp"
+                        android:paddingTop="@dimen/_16sdp"
+                        android:paddingEnd="@dimen/_22sdp"
+                        android:paddingBottom="@dimen/_16sdp"
+                        android:text="@string/save_changes"
+                        android:textColor="@color/color_161d4a"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

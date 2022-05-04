@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/welcome_background"
+        android:orientation="vertical"
+        android:padding="@dimen/_25sdp"
+        tools:context=".mvvm.view.WelcomeActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/logo" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/welcome_to_tickt"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_32ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_welcome"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:fontFamily="@font/neue_haas_display_roman"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/australia_s_fastest_growing_network_for_builders_and_tradespeople"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_yellow_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_white_btn"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:background="@drawable/bg_btn_yellow"
+            android:elevation="@dimen/_3sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:outlineSpotShadowColor="@color/color_fee600"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/im_builder"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_white_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_btn_white"
+            android:elevation="@dimen/_3sdp"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:gravity="center"
+            android:outlineSpotShadowColor="@color/white"
+            android:padding="@dimen/_15sdp"
+            android:stateListAnimator="@null"
+            android:text="@string/Im_tradie"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </RelativeLayout>
+</layout>

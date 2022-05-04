@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:id="@+id/ll_row_search_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:id="@+id/ll_header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/fl_background"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/bg_selected_rect_trade_new">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_user_profile"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_marginStart="@dimen/_8sdp"
+                app:riv_oval="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/bg_circle_dfe5ef"
+                android:layout_width="@dimen/_45sdp"
+                android:src="@drawable/active_circle"
+                android:layout_height="@dimen/_45sdp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_marginStart="-1dp"
+                android:padding="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/neue_haas_display_medium"
+                    tools:text="Dummy Text"
+                    android:id="@+id/tv_title"
+                    android:textSize="@dimen/_15ssp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textColor="@color/color_313d48" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/inter_regular"
+                    tools:text="Dummy Text"
+                    android:id="@+id/tv_details"
+                    android:textSize="@dimen/_13ssp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textColor="@color/color_313d48" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

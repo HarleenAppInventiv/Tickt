@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_background"
+        android:background="@drawable/milestone_complete_success"
+        android:orientation="vertical"
+        android:padding="@dimen/_30sdp"
+        tools:context=".mvvm.view.WelcomeActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/logo" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_32ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/neue_haas_display_roman"
+            android:id="@+id/tv_subheading"
+            android:layout_below="@+id/tv_heading"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:lineSpacingExtra="@dimen/_7sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_yellow_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:background="@drawable/bg_btn_yellow"
+            android:elevation="@dimen/_3sdp"
+            android:gravity="center"
+            android:layout_above="@+id/tv_white_btn"
+            android:outlineSpotShadowColor="@color/color_fee600"
+            android:padding="@dimen/_15sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_white_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/neue_haas_display_medium"
+            android:background="@drawable/bg_btn_yellow"
+            android:elevation="@dimen/_3sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_alignParentBottom="true"
+            android:outlineSpotShadowColor="@color/color_fee600"
+            android:padding="@dimen/_15sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </RelativeLayout>
+</layout>

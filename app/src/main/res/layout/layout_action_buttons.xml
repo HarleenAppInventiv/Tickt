@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_blue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_btn_selector_background_blue_and_grey"
+            android:elevation="@dimen/_3sdp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:stateListAnimator="@null"
+            android:textColor="@color/bg_button_selector_text_color_enable_disable"
+            android:textSize="@dimen/_20ssp"
+            android:translationZ="@dimen/_5sdp" />
+
+
+    </LinearLayout>
+
+
+</layout>

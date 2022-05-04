@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+           android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_25sdp"
+            android:background="@color/transparent"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:background="@drawable/bg_btn_yellow"
+                android:elevation="@dimen/_3sdp"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@color/color_fee600"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/take_a_phot"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14ssp"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:background="@drawable/bg_btn_yellow"
+                android:elevation="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@color/color_fee600"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/upload_from_gallery"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14ssp"
+                />
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_files"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_btn_pale"
+                android:elevation="@dimen/_3sdp"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:gravity="center"
+                android:outlineSpotShadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/upload_from_file"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_15sdp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+</layout>

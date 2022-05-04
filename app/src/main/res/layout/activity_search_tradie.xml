@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_F7F8FA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_result_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:ellipsize="end"
+                app:fontFamily="@font/neue_haas_display_medium"
+                android:maxLines="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_18ssp"
+                android:visibility="gone"
+                tools:text="42 Result" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_result_title_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:ellipsize="end"
+                app:fontFamily="@font/neue_haas_display_roman"
+                android:maxLines="2"
+                android:text="@string/no_tradie_found"
+                android:textColor="@color/color_161d4a"
+                android:textSize="@dimen/_18ssp"
+                android:visibility="gone" />
+
+            <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+                android:id="@+id/rl_search_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srl_direction="both">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_search_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/rowitem_recommended_tradie" />
+            </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/rl_toolbar"
+            layout="@layout/search_toolbar" />
+    </RelativeLayout>
+
+
+</layout>

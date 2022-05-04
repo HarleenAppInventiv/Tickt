@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/parentCL"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/file_icon"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/file_path"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/file_name"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            android:id="@+id/iv_play"
+            android:src="@drawable/ic_play_arrow_white_36dp"
+            app:layout_constraintStart_toStartOf="@+id/file_icon"
+            app:layout_constraintTop_toTopOf="@+id/file_icon"
+            app:layout_constraintEnd_toEndOf="@+id/file_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/file_icon"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/file_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+         android:textColor="@color/dropbox_color"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/file_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="File name will go here" />
+
+        <TextView
+            android:id="@+id/file_path"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="@+id/file_name"
+            app:layout_constraintStart_toStartOf="@+id/file_name"
+            app:layout_constraintTop_toBottomOf="@+id/file_name"
+            tools:text="File path will go here" />
+
+        <View
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/file_path"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/color_D8D8D8"
+            android:layout_height="@dimen/_1sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

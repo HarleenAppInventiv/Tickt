@@ -1,0 +1,5 @@
+include ':app'
+include ':core'
+include ':googlelibrary'
+rootProject.name = "Ticktapp"
+include ':rangedatepicker'

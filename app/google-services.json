@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "795502342919",
+    "firebase_url": "https://tickt-app-default-rtdb.firebaseio.com",
+    "project_id": "tickt-app",
+    "storage_bucket": "tickt-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795502342919:android:c071ae4740443b2ad30ba2",
+        "android_client_info": {
+          "package_name": "com.example.ticktapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795502342919-2uf5mfger7pmlo7bmc5b410not2g2hq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ticktapp",
+            "certificate_hash": "4211b552664002583db56f952bbce9d478f5ff7e"
+          }
+        },
+        {
+          "client_id": "795502342919-mn4s9qp6udi7ocklb895o9k4dd6tbtlf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ticktapp",
+            "certificate_hash": "f605aa78b71ea5428b383d4de1c3b91a6b2e322c"
+          }
+        },
+        {
+          "client_id": "795502342919-tm4c2nt961i6154vsli06iqrlv5c3po1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ticktapp",
+            "certificate_hash": "468f5195aee63ad241e80c1765787f7514470cca"
+          }
+        },
+        {
+          "client_id": "795502342919-2fcs3uhmaotq20t50f8df6lgq2m2vnat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaUN-y5aGc9FbdxCOxCIYLlW7hMkFXcTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795502342919-2fcs3uhmaotq20t50f8df6lgq2m2vnat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "795502342919-18chok9djsvkeosprp029e0emn5fikr1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tickt.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
